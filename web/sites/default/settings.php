@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = '2KJwebpsP3K2992Qq_dgIo3xH4J3Rh1SiTu6wpO_xbHTu_WS6fuG8LJwxCEu4bLQ6oK6_w4xmw';
 
 /**
  * Deployment identifier.
@@ -717,3 +717,11 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 # if (file_exists(__DIR__ . '/settings.local.php')) {
 #   include __DIR__ . '/settings.local.php';
 # }
+$databases['default']['default'] = array (
+  'database' => 'sites/default/files/.ht.sqlite',
+  'prefix' => '',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
+  'driver' => 'sqlite',
+);
+$settings['install_profile'] = 'standard';
+$config_directories['sync'] = 'sites/default/files/config_gkkGt-aY7epWRG3CTYjGnGj3xC_qlM-9rZGQZ6HPph0c1r3ZRE0D0Si5wwqokPetqXf6wblrsA/sync';
