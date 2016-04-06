@@ -1,0 +1,27 @@
+uuid: 358f4b0d-0ae7-4c55-b000-c541a316f960
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gpx
+    - node.type.adventure
+  module:
+    - file
+id: node.adventure.field_gpx
+field_name: field_gpx
+entity_type: node
+bundle: adventure
+label: GPX
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: gpx
+  max_filesize: '50 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

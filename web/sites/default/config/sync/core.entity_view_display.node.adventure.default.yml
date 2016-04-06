@@ -1,0 +1,91 @@
+uuid: 6deaa6cd-adb2-41ff-8e00-d05833e987fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.adventure.body
+    - field.field.node.adventure.field_gpx
+    - field.field.node.adventure.field_hours
+    - field.field.node.adventure.field_photos
+    - field.field.node.adventure.field_places_visited
+    - field.field.node.adventure.field_reference
+    - field.field.node.adventure.field_starting_point
+    - node.type.adventure
+  module:
+    - file
+    - geolocation
+    - image
+    - link
+    - text
+    - user
+id: node.adventure.default
+targetEntityType: node
+bundle: adventure
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_gpx:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_hours:
+    weight: 104
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_photos:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_places_visited:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_reference:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_starting_point:
+    weight: 106
+    label: above
+    settings:
+      type: TERRAIN
+      zoom: '10'
+      height: 400px
+      width: 100%
+      info_text: ''
+      info_auto_display: '1'
+      title: ''
+    third_party_settings: {  }
+    type: geolocation_map
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

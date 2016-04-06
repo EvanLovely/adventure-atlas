@@ -1,0 +1,38 @@
+uuid: 75194035-ec5a-49fa-9000-be5407c1d392
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.adventure.body
+    - field.field.node.adventure.field_gpx
+    - field.field.node.adventure.field_hours
+    - field.field.node.adventure.field_photos
+    - field.field.node.adventure.field_places_visited
+    - field.field.node.adventure.field_reference
+    - field.field.node.adventure.field_starting_point
+    - node.type.adventure
+  module:
+    - text
+    - user
+id: node.adventure.teaser
+targetEntityType: node
+bundle: adventure
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_gpx: true
+  field_hours: true
+  field_photos: true
+  field_places_visited: true
+  field_reference: true
+  field_starting_point: true

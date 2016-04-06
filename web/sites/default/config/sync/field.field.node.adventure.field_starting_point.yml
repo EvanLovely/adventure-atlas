@@ -1,0 +1,21 @@
+uuid: 7054f9d8-43e7-4268-8900-b03d0e7cc6e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_starting_point
+    - node.type.adventure
+  module:
+    - geolocation
+id: node.adventure.field_starting_point
+field_name: field_starting_point
+entity_type: node
+bundle: adventure
+label: 'Starting Point'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

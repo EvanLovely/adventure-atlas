@@ -1,0 +1,9 @@
+uuid: 5a05258d-a726-41d7-8101-1e48e7f294d5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Place Types'
+vid: place_types
+description: 'Waterfall, viewpoint, lake, etc...'
+hierarchy: 0
+weight: 0

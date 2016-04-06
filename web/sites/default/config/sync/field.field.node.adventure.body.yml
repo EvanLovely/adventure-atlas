@@ -1,0 +1,22 @@
+uuid: b29204b6-d551-48bc-ab00-e996815820b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.adventure
+  module:
+    - text
+id: node.adventure.body
+field_name: body
+entity_type: node
+bundle: adventure
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

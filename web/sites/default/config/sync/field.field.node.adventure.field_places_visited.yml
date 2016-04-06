@@ -1,0 +1,26 @@
+uuid: 5184b722-7a69-4d87-9800-0a467befade4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_places_visited
+    - node.type.adventure
+    - node.type.place
+id: node.adventure.field_places_visited
+field_name: field_places_visited
+entity_type: node
+bundle: adventure
+label: 'Places Visited'
+description: 'Where do we go? What do we see?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      place: place
+    sort:
+      field: _none
+field_type: entity_reference

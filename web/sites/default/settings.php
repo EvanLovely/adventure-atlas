@@ -704,7 +704,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  * example.org, with all subdomains included.
  */
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config/sync';
+$config_directories['sync'] = 'sites/default/config/sync';
 
 /**
  * Load local development override configuration, if available.

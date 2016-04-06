@@ -1,0 +1,23 @@
+uuid: 171c4adf-c29a-4007-9200-d90af7e6baca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_elevation
+    - node.type.place
+id: node.place.field_elevation
+field_name: field_elevation
+entity_type: node
+bundle: place
+label: Elevation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

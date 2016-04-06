@@ -1,0 +1,68 @@
+uuid: a81187be-e1b1-468c-ba03-3e08307df557
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.place.body
+    - field.field.node.place.field_elevation
+    - field.field.node.place.field_location
+    - field.field.node.place.field_photos
+    - field.field.node.place.field_type
+    - node.type.place
+  module:
+    - geolocation
+    - image
+    - text
+    - user
+id: node.place.default
+targetEntityType: node
+bundle: place
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_elevation:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_location:
+    weight: 104
+    label: above
+    settings:
+      type: TERRAIN
+      zoom: '10'
+      height: 400px
+      width: 100%
+      info_text: ''
+      info_auto_display: '1'
+      title: ''
+    third_party_settings: {  }
+    type: geolocation_map
+  field_photos:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_type:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

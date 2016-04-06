@@ -1,0 +1,22 @@
+uuid: 15ab7de8-cd09-474e-b003-3d0554235f01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.place
+  module:
+    - text
+id: node.place.body
+field_name: body
+entity_type: node
+bundle: place
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
