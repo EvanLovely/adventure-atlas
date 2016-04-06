@@ -14,11 +14,11 @@
 
 ### Install Site
 
-    sudo cp web/sites/example.settings.local.php web/sites/default/settings.local.php
+    sudo cp drupal/sites/example.settings.local.php drupal/sites/default/settings.local.php
 
-Create a new database locally, and adjust the settings in `settings.local.php` accordingly; see the file by executing `open web/sites/default/settings.local.php`.
+Create a new database locally, and adjust the settings in `settings.local.php` accordingly; see the file by executing `open drupal/sites/default/settings.local.php`.
 
 ### Grab Database
 
-    cd web
+    cd drupal
     drush sql-sync @aa.prod @self
