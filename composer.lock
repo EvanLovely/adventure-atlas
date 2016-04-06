@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "69d7a32cc2650bc22a58a8213eddddf4",
-    "content-hash": "8dd1b66f1492a5a3661a6f1189297fea",
+    "hash": "7f7fefbbc90457648f15a4ac3086610e",
+    "content-hash": "5f3c1bfa41e0ebd8bf80fddfc8e3a4a8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1055,6 +1055,38 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2016-04-05 23:34:17"
+        },
+        {
+            "name": "drupal/geolocation",
+            "version": "8.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/geolocation",
+                "reference": "6d279d17c722bf612e21bfdbe0545a972c105845"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/geolocation-8.x-1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/field": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a simple geolocation field type to store and display location data (lat, lng).",
+            "homepage": "https://www.drupal.org/project/geolocation",
+            "time": "2016-01-27 12:15:59"
         },
         {
             "name": "drush/drush",
