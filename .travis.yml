@@ -6,8 +6,6 @@ sudo: false
 
 env:
   global:
-    secure: "kQ7JtRIHqt80Y+Mc8F4E2ISyy+W/JgGPCTiVoliqRsc9Q1EP+3I8YYHT4Qx4F15lypEwaY9BdHNWQcijPzOgO0BSRQwJDwu/buMt3Pu+uHzmGxKEn2JJuePzS8ZQCh8Tql8ibHFm8IdvTT3R8ROkFaN7/eEx2BJ5hig8XOqs4bTr9vAwC2zsIfKGiKHg0Bz1uHaH54No5bdQEeWb43sBBBtdNnTy7vg8+nYT7nJ2n7Gf0lPiqLq9p473jBzsmvvmLLmgXGN2vG5YLYar802fzLWDaMKAzDNE9yBIYyyCHa2TQb5We7uI1mR5Z6snJyxxCfDGvrqHfdmgmT+eCq5/paN+431TyX2LkleNE5wtIaCIFYyLwZAUyWFZB2xqUl2c+sNXmjtz0o7lm7FSRcc/rkhjaX7GIKvvzku0iHdBGV7wLomvFlEwflD77rBL5C9qCKi6k6myfDuykRC4c89hlOU9twdXxIjcF5DHd7cQwqmd4VqorhwGUCnBd+Qqe4JRquIo1bo2A4JXiY1IBVeClzRAXU8IO7+4tade6qKY0+1yjis5jvwa6t/FLPjGBz+0nFZhCHGHlB9zDWiBNT/irf6RHotKEAdqAZTYQjd3iTu5/IxgzDnXySBMxRJBvmWWrQtgW3+VK7BDF+TQjL1k1Prurb/Bcb64+M94HrwaC/g="
-
 #     - SIMPLETEST_DB=sqlite://tmp/site.sqlite
 #     - SIMPLETEST_BASE_URL="http://127.0.0.1:8080"
 #   matrix:
