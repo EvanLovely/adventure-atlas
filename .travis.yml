@@ -15,8 +15,9 @@ env:
 before_install:
   # - echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
   # - phpenv config-rm xdebug.ini
-  - composer --verbose self-update
   - openssl aes-256-cbc -K $encrypted_2c108e7577ad_key -iv $encrypted_2c108e7577ad_iv -in scripts/deploy-key.enc -out scripts/deploy-key -d
+  - chmod 400 scripts/deploy-key
+  - composer --verbose self-update
   - composer --version
 
 install:
