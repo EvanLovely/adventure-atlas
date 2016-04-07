@@ -1,0 +1,9 @@
+uuid: f0f3a231-ce69-4af0-a1cb-15e2371dbf0b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Gear Types'
+vid: gear_type
+description: 'Kinds of generic gear like backpack or shoes.'
+hierarchy: 0
+weight: 0
