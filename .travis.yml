@@ -32,3 +32,4 @@ script:
   - ./../vendor/bin/phpunit -c core --exclude-group Composer
   - ./../vendor/bin/drush
   - ./../vendor/bin/drupal
+
