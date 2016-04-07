@@ -1,0 +1,23 @@
+uuid: 82974f9e-35c5-412c-ba81-163ba8462985
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_where_to_buy
+    - node.type.gear
+  module:
+    - link
+id: node.gear.field_where_to_buy
+field_name: field_where_to_buy
+entity_type: node
+bundle: gear
+label: 'Where to Buy'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

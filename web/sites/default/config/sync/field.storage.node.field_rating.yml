@@ -1,0 +1,20 @@
+uuid: a3b73928-9f26-42d6-a138-d4f0e8ee7e4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_rating
+field_name: field_rating
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 1
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

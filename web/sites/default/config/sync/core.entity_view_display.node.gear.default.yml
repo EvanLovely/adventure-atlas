@@ -1,0 +1,58 @@
+uuid: 320ad454-6a9c-4f57-85b2-518bd36dbfe8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gear.body
+    - field.field.node.gear.field_photos
+    - field.field.node.gear.field_rating
+    - field.field.node.gear.field_where_to_buy
+    - node.type.gear
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.gear.default
+targetEntityType: node
+bundle: gear
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_photos:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_rating:
+    weight: 104
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+  field_where_to_buy:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 100
+hidden: {  }

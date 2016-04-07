@@ -1,0 +1,26 @@
+uuid: f2f34d93-dc0f-4786-ad59-0d41cac6c397
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gear.body
+    - node.type.gear
+  module:
+    - text
+    - user
+id: node.gear.teaser
+targetEntityType: node
+bundle: gear
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }
