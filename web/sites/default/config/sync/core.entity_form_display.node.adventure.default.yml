@@ -4,8 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.adventure.body
+    - field.field.node.adventure.field_adventure_type
+    - field.field.node.adventure.field_challenge
+    - field.field.node.adventure.field_distance
+    - field.field.node.adventure.field_elevation_gain
+    - field.field.node.adventure.field_gear_lists
     - field.field.node.adventure.field_gpx
+    - field.field.node.adventure.field_highest_elevation
     - field.field.node.adventure.field_hours
+    - field.field.node.adventure.field_members_reference
     - field.field.node.adventure.field_photos
     - field.field.node.adventure.field_places_visited
     - field.field.node.adventure.field_reference
@@ -38,18 +45,63 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_adventure_type:
+    weight: 39
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_challenge:
+    weight: 40
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_distance:
+    weight: 41
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_elevation_gain:
+    weight: 42
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_gear_lists:
+    weight: 44
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_gpx:
     weight: 37
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+  field_highest_elevation:
+    weight: 43
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
   field_hours:
     weight: 34
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
+  field_members_reference:
+    weight: 45
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
   field_photos:
     weight: 33
     settings:

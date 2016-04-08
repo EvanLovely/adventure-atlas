@@ -1,0 +1,27 @@
+uuid: 40d0901e-a216-449f-baf7-793d86aeb7ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_members_reference
+    - node.type.adventure
+  module:
+    - file
+id: node.adventure.field_members_reference
+field_name: field_members_reference
+entity_type: node
+bundle: adventure
+label: 'Members Reference'
+description: 'Private files not for public consumption'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'md txt pdf gpx kml kmz jpg jpeg png mov mp4 zip'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

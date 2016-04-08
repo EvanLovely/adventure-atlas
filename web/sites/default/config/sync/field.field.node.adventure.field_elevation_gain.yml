@@ -1,0 +1,23 @@
+uuid: 2e655197-8158-4d60-9662-240c2f27999c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_elevation_gain
+    - node.type.adventure
+id: node.adventure.field_elevation_gain
+field_name: field_elevation_gain
+entity_type: node
+bundle: adventure
+label: 'Elevation Gain'
+description: 'Total number of feet gained'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: foot|feet
+field_type: decimal

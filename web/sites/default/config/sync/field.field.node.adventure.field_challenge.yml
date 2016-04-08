@@ -1,0 +1,23 @@
+uuid: ad6f67fe-0b85-490b-aa1d-1bab0169d065
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_challenge
+    - node.type.adventure
+  module:
+    - options
+id: node.adventure.field_challenge
+field_name: field_challenge
+entity_type: node
+bundle: adventure
+label: Challenge
+description: 'How hard is this on a scale of 1-10?'
+required: false
+translatable: false
+default_value:
+  -
+    value: 5
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,27 @@
+uuid: df3297de-175c-4c59-9407-6ca7e3b4dc25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gear_lists
+    - node.type.adventure
+    - node.type.gear_list
+id: node.adventure.field_gear_lists
+field_name: field_gear_lists
+entity_type: node
+bundle: adventure
+label: 'Gear Lists'
+description: 'Generic collections of gear required for Adventure.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      gear_list: gear_list
+    sort:
+      field: title
+      direction: ASC
+field_type: entity_reference

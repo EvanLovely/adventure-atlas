@@ -1,0 +1,23 @@
+uuid: 1854de4c-22ae-4c6e-8de4-07e3c6843a36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_distance
+    - node.type.adventure
+id: node.adventure.field_distance
+field_name: field_distance
+entity_type: node
+bundle: adventure
+label: Distance
+description: 'How long in miles?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: mile|miles
+field_type: decimal

@@ -1,0 +1,9 @@
+uuid: acd07351-0f7d-4ace-ba0f-23d50a3c3b43
+langcode: en
+status: true
+dependencies: {  }
+name: 'Adventure Types'
+vid: adventure_types
+description: 'Kinds of activities to do like hiking, camping, or biking.'
+hierarchy: 0
+weight: 0

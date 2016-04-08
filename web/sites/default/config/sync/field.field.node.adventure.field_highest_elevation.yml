@@ -1,0 +1,23 @@
+uuid: 7a030dce-2d2e-40fb-b3eb-d1d9aee469f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_highest_elevation
+    - node.type.adventure
+id: node.adventure.field_highest_elevation
+field_name: field_highest_elevation
+entity_type: node
+bundle: adventure
+label: 'Highest Elevation'
+description: 'Highest point reached in feet.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: foot|feet
+field_type: integer

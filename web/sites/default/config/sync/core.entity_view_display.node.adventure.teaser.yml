@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.adventure.field_photos
     - field.field.node.adventure.field_places_visited
     - field.field.node.adventure.field_reference
+    - field.field.node.adventure.field_region
     - field.field.node.adventure.field_starting_point
     - node.type.adventure
   module:
@@ -23,15 +24,34 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 2
     settings:
       trim_length: 600
     third_party_settings: {  }
+  field_hours:
+    type: number_decimal
+    weight: 1
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_region:
+    type: entity_reference_entity_view
+    weight: 0
+    label: inline
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_gpx: true
-  field_hours: true
   field_photos: true
   field_places_visited: true
   field_reference: true
