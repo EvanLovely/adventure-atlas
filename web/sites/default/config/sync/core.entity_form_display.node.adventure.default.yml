@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.adventure.field_photos
     - field.field.node.adventure.field_places_visited
     - field.field.node.adventure.field_reference
+    - field.field.node.adventure.field_region
     - field.field.node.adventure.field_starting_point
     - image.style.thumbnail
     - node.type.adventure
@@ -71,6 +72,14 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+  field_region:
+    weight: 38
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
   field_starting_point:
     weight: 36
     settings: {  }

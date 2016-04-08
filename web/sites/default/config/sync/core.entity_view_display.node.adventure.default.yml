@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.adventure.field_photos
     - field.field.node.adventure.field_places_visited
     - field.field.node.adventure.field_reference
+    - field.field.node.adventure.field_region
     - field.field.node.adventure.field_starting_point
     - node.type.adventure
   module:
@@ -71,6 +72,13 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+  field_region:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   field_starting_point:
     weight: 106
     label: above

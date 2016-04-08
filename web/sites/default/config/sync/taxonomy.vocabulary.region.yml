@@ -1,0 +1,9 @@
+uuid: 8802ae62-144d-49b8-940c-3b52b835f5d1
+langcode: en
+status: true
+dependencies: {  }
+name: Region
+vid: region
+description: 'The general locale where an Adventure is located.'
+hierarchy: 0
+weight: 0
