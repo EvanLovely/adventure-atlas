@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'Gear Types'
 vid: gear_type
 description: 'Kinds of generic gear like backpack or shoes.'
-hierarchy: 0
+hierarchy: 1
 weight: 0
