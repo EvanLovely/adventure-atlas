@@ -23,4 +23,7 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_photos: true
+  field_rating: true
+  field_where_to_buy: true
