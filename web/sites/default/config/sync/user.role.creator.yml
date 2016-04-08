@@ -1,0 +1,20 @@
+uuid: 024e3828-c6cc-4010-acf6-9e5712be966d
+langcode: en
+status: true
+dependencies: {  }
+id: creator
+label: Creator
+weight: -6
+is_admin: null
+permissions:
+  - 'administer comments'
+  - 'edit own comments'
+  - 'access contextual links'
+  - 'use text format full_html'
+  - 'access content overview'
+  - 'administer nodes'
+  - 'administer content types'
+  - 'delete all revisions'
+  - 'revert all revisions'
+  - 'view all revisions'
+  - 'create adventure content'

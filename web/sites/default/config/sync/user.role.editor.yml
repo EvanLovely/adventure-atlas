@@ -1,0 +1,14 @@
+uuid: 880546bc-a503-4ab6-8580-786fee2e5afb
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: -7
+is_admin: null
+permissions:
+  - 'edit own comments'
+  - 'access contextual links'
+  - 'access content overview'
+  - 'administer nodes'
+  - 'view all revisions'
