@@ -51,7 +51,14 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_adventure_type: true
+  field_challenge: true
+  field_distance: true
+  field_elevation_gain: true
+  field_gear_lists: true
   field_gpx: true
+  field_highest_elevation: true
+  field_members_reference: true
   field_photos: true
   field_places_visited: true
   field_reference: true
