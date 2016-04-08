@@ -5,8 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.adventure.body
+    - field.field.node.adventure.field_adventure_type
+    - field.field.node.adventure.field_challenge
+    - field.field.node.adventure.field_distance
+    - field.field.node.adventure.field_elevation_gain
+    - field.field.node.adventure.field_gear_lists
     - field.field.node.adventure.field_gpx
+    - field.field.node.adventure.field_highest_elevation
     - field.field.node.adventure.field_hours
+    - field.field.node.adventure.field_members_reference
     - field.field.node.adventure.field_photos
     - field.field.node.adventure.field_places_visited
     - field.field.node.adventure.field_reference
@@ -14,6 +21,8 @@ dependencies:
     - field.field.node.adventure.field_starting_point
     - node.type.adventure
   module:
+    - geolocation
+    - options
     - text
     - user
 id: node.adventure.teaser
@@ -24,13 +33,45 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    weight: 0
     settings:
       trim_length: 600
     third_party_settings: {  }
+  field_adventure_type:
+    type: entity_reference_entity_view
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+  field_challenge:
+    type: list_key
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_distance:
+    type: number_unformatted
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_elevation_gain:
+    type: number_unformatted
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_highest_elevation:
+    type: number_unformatted
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_hours:
     type: number_decimal
-    weight: 1
+    weight: 4
     label: inline
     settings:
       thousand_separator: ''
@@ -40,26 +81,26 @@ content:
     third_party_settings: {  }
   field_region:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 1
     label: inline
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+  field_starting_point:
+    type: geolocation_latlng
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   links:
-    weight: 3
+    weight: 6
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_adventure_type: true
-  field_challenge: true
-  field_distance: true
-  field_elevation_gain: true
   field_gear_lists: true
   field_gpx: true
-  field_highest_elevation: true
   field_members_reference: true
   field_photos: true
   field_places_visited: true
   field_reference: true
-  field_starting_point: true
