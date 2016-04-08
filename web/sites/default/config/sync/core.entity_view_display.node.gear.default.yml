@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.gear.body
+    - field.field.node.gear.field_gear_type
     - field.field.node.gear.field_photos
     - field.field.node.gear.field_rating
     - field.field.node.gear.field_where_to_buy
@@ -24,6 +25,13 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  field_gear_type:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   field_photos:
     weight: 102
     label: above

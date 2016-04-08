@@ -1,0 +1,22 @@
+uuid: 9279c881-a449-46aa-a591-dfb113a2b89b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.gear_list
+  module:
+    - text
+id: node.gear_list.body
+field_name: body
+entity_type: node
+bundle: gear_list
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
