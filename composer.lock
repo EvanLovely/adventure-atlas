@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f7fefbbc90457648f15a4ac3086610e",
-    "content-hash": "5f3c1bfa41e0ebd8bf80fddfc8e3a4a8",
+    "hash": "90c5e95a888c48440ee8ee4b62f01dda",
+    "content-hash": "c31342a3dd94b5646772171a839411fd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -805,6 +805,51 @@
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
             "time": "2016-03-10 17:48:12"
+        },
+        {
+            "name": "drupal/admin_toolbar",
+            "version": "8.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/admin_toolbar.git",
+                "reference": "bb7533adfce88bf783dcb23aea137ee9dbd80cdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.14.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/node": "8.*",
+                "drupal/toolbar": "8.*"
+            },
+            "replace": {
+                "drupal/admin_toolbar_tools": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/admin_toolbar_tools"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Anis Taktak",
+                    "homepage": "https://www.drupal.org/u/matio89"
+                }
+            ],
+            "description": "Admin Toolbar improve the default Drupal Toolbar,it lets the hover of sub menus.",
+            "homepage": "http://drupal.org/project/admin_toolbar",
+            "time": "2016-02-08 14:39:48"
         },
         {
             "name": "drupal/console",
