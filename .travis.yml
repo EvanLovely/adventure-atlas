@@ -39,6 +39,6 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: ssh -i scripts/deploy-key -oStrictHostKeyChecking=no -t root@45.55.28.8 "cd /var/www/adventure-atlas/web && git pull && ../vendor/drush/drush/drush config-import -y"
+  script: ssh -i scripts/deploy-key -oStrictHostKeyChecking=no -t root@45.55.28.8 "cd /var/www/adventure-atlas/ && git pull && bash scripts/post-git-pull.sh"
   on:
     branch: master
