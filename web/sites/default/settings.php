@@ -706,6 +706,8 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 $settings['trusted_host_patterns'] = array(
   '^adventure-atlas\.com$',
   '^.+\.adventure-atlas\.com$',
+  '127.0.0.1',
+  'localhost',
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/config/sync';
