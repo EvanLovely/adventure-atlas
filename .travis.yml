@@ -15,8 +15,6 @@ env:
 before_install:
   # - echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
   # - phpenv config-rm xdebug.ini
-  - openssl aes-256-cbc -K $encrypted_2c108e7577ad_key -iv $encrypted_2c108e7577ad_iv -in scripts/deploy-key.enc -out scripts/deploy-key -d
-  - chmod 400 scripts/deploy-key
   - composer --verbose self-update
   - composer --version
 
@@ -39,6 +37,6 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: ssh -i scripts/deploy-key -oStrictHostKeyChecking=no -t root@45.55.28.8 "cd /var/www/adventure-atlas/ && git pull && bash scripts/post-git-pull.sh"
+  script: openssl aes-256-cbc -K $encrypted_2c108e7577ad_key -iv $encrypted_2c108e7577ad_iv -in scripts/deploy-key.enc -out scripts/deploy-key -d && chmod 400 scripts/deploy-key && ssh -i scripts/deploy-key -oStrictHostKeyChecking=no -t root@45.55.28.8 "cd /var/www/adventure-atlas/ && git pull && bash scripts/post-git-pull.sh"
   on:
     branch: master
