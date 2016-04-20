@@ -35,24 +35,24 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
   field_adventure_type:
-    weight: 109
+    weight: 6
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_challenge:
-    weight: 110
+    weight: 11
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_distance:
-    weight: 111
+    weight: 8
     label: above
     settings:
       thousand_separator: ''
@@ -62,7 +62,7 @@ content:
     third_party_settings: {  }
     type: number_decimal
   field_elevation_gain:
-    weight: 112
+    weight: 9
     label: above
     settings:
       thousand_separator: ''
@@ -72,20 +72,20 @@ content:
     third_party_settings: {  }
     type: number_decimal
   field_gear_lists:
-    weight: 114
+    weight: 15
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_gpx:
-    weight: 107
+    weight: 12
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
   field_highest_elevation:
-    weight: 113
+    weight: 10
     label: above
     settings:
       thousand_separator: ''
@@ -93,7 +93,7 @@ content:
     third_party_settings: {  }
     type: number_integer
   field_hours:
-    weight: 104
+    weight: 7
     label: above
     settings:
       thousand_separator: ''
@@ -103,13 +103,13 @@ content:
     third_party_settings: {  }
     type: number_decimal
   field_members_reference:
-    weight: 115
+    weight: 14
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
   field_photos:
-    weight: 103
+    weight: 2
     label: above
     settings:
       image_style: ''
@@ -117,14 +117,14 @@ content:
     third_party_settings: {  }
     type: image
   field_places_visited:
-    weight: 105
+    weight: 5
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_reference:
-    weight: 102
+    weight: 13
     label: above
     settings:
       trim_length: 80
@@ -135,14 +135,14 @@ content:
     third_party_settings: {  }
     type: link
   field_region:
-    weight: 108
+    weight: 4
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_starting_point:
-    weight: 106
+    weight: 3
     label: above
     settings:
       type: TERRAIN
@@ -155,7 +155,7 @@ content:
     third_party_settings: {  }
     type: geolocation_map
   links:
-    weight: 100
+    weight: 0
     settings: {  }
     third_party_settings: {  }
 hidden: {  }
